@@ -1,0 +1,29 @@
+{
+  "name": "hexo-mt-converter",
+  "version": "1.0.0",
+  "description": "Simple Converter from MT export data to Hexo md files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memolog/hexo-mt-converter.git"
+  },
+  "keywords": [
+    "hexo"
+  ],
+  "author": "Yutaka Yamaguchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/memolog/hexo-mt-converter/issues"
+  },
+  "homepage": "https://github.com/memolog/hexo-mt-converter#readme",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.20.1",
+    "node-fetch": "^1.7.3",
+    "turndown": "^4.0.1"
+  }
+}
