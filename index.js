@@ -164,9 +164,9 @@ if (!sourceDir) {
           hexoData += '---\n';
 
           const replaceHostedURL = (str) => {
-            const reg = new RegExp(`https?:\/\/${host}(\/[^\\s^"]*?)\\.(html?|jpe?g|png|gif)`);
+            const reg = new RegExp(`https?:\/\/${host}(\/[^\\s^"]*?)\\.(html?|jpe?g|png|gif|php)`, 'g');
             return str.replace(reg, (urlStr, urlPath, ext) => {
-              if (/htm?l/.test(ext)) {
+              if (/(htm?)l|(php)/.test(ext)) {
                 return `${rootPath}${urlPath}/`;
               } else {
                 fetchImage(urlStr);
