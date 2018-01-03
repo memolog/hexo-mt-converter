@@ -11,8 +11,9 @@ turndownService.addRule('fencedCodeBlock', {
     return (
       options.codeBlockStyle === 'fenced' &&
       node.nodeName === 'PRE' &&
-      node.firstChild &&
-      node.firstChild.nodeName === 'CODE'
+      (
+        (node.firstChild && node.firstChild.nodeName === 'CODE') || (node.className === 'prettyprint')
+      )
     )
   },
 
